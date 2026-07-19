@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "private": true,
-  "homepage": "https://kumkumsingh1323.github.io/EduTrack",
+  "homepage": "https://kumkumsingh1323.github.io/EduTrack/index.html",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
