@@ -14,7 +14,7 @@ export default function Dashboard({ onLogout }) {
 
   // 1. Fetch Education Levels on load
   useEffect(() => {
-    fetch('/api/platform/education')
+    fetch('https://edutrack-50li.onrender.com/api/platform/education')
       .then(res => res.json())
       .then(data => {
         setLevels(data);
@@ -126,3 +126,4 @@ export default function Dashboard({ onLogout }) {
     </div>
   );
 }
+

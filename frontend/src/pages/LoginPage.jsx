@@ -11,7 +11,7 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/api/platform/education')
+    fetch('https://edutrack-50li.onrender.com/api/platform/education')
       .then(res => res.json())
       .then(data => setLevels(data))
       .catch(() => {});
@@ -98,3 +98,4 @@ export default function LoginPage() {
     </div>
   );
 }
+

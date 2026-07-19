@@ -17,7 +17,7 @@ export default function PathsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/platform/education')
+    fetch('https://edutrack-50li.onrender.com/api/platform/education')
       .then(res => res.json())
       .then(data => {
         setLevels(data);
@@ -145,3 +145,4 @@ export default function PathsPage() {
     </div>
   );
 }
+

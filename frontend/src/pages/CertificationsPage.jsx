@@ -9,7 +9,7 @@ export default function CertificationsPage() {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('/api/platform/careers/certifications')
+    fetch('https://edutrack-50li.onrender.com/api/platform/careers/certifications')
       .then(res => res.json())
       .then(data => {
         if (user?.educationLevel === '10th' || user?.educationLevel === 'Intermediate') {
@@ -95,3 +95,4 @@ export default function CertificationsPage() {
     </div>
   );
 }
+

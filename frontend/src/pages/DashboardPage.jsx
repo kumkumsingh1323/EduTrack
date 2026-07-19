@@ -13,7 +13,7 @@ export default function DashboardPage() {
     const fetchRecommendations = async () => {
       try {
         // Get education levels
-        const levelsRes = await fetch('/api/platform/education');
+        const levelsRes = await fetch('https://edutrack-50li.onrender.com/api/platform/education');
         const levels = await levelsRes.json();
         const userLevel = levels.find(l => l.name === user?.educationLevel);
         
@@ -186,3 +186,4 @@ export default function DashboardPage() {
     </div>
   );
 }
+

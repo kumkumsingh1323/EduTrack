@@ -10,7 +10,7 @@ export default function CompanyHub() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('/api/platform/careers/companies')
+    fetch('https://edutrack-50li.onrender.com/api/platform/careers/companies')
       .then(res => res.json())
       .then(data => {
         if (user?.educationLevel === '10th' || user?.educationLevel === 'Intermediate') {
@@ -200,3 +200,4 @@ export default function CompanyHub() {
     </div>
   );
 }
+

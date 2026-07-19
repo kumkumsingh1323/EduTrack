@@ -9,7 +9,7 @@ export default function InternshipsPage() {
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
-    fetch('/api/platform/careers/internships')
+    fetch('https://edutrack-50li.onrender.com/api/platform/careers/internships')
       .then(res => res.json())
       .then(data => {
         // Filter based on user level
@@ -82,3 +82,4 @@ export default function InternshipsPage() {
     </div>
   );
 }
+

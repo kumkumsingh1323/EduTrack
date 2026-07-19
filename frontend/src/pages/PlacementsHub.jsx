@@ -9,7 +9,7 @@ export default function PlacementsHub() {
   const [selectedRole, setSelectedRole] = useState(null);
 
   useEffect(() => {
-    fetch('/api/platform/careers/placements')
+    fetch('https://edutrack-50li.onrender.com/api/platform/careers/placements')
       .then(res => res.json())
       .then(data => {
         if (user?.educationLevel === '10th' || user?.educationLevel === 'Intermediate') {
@@ -164,3 +164,4 @@ export default function PlacementsHub() {
     </div>
   );
 }
+
